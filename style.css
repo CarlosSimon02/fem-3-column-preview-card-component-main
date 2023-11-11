@@ -1,5 +1,5 @@
 :root {
-    --clr-primary: white;
+    --clr-primary: hsl(0, 0%, 95%);
     --clr-th-sedan: hsl(31, 77%, 52%);
     --clr-th-suv: hsl(184, 100%, 22%);
     --clr-th-luxury: hsl(179, 100%, 13%);
@@ -55,6 +55,7 @@ h6 {
 
 /* typography */
 body {
+    background-color: var(--clr-primary);
     font-family: var(--ff-primary);
     color: var(--clr-primary);
     font-size: .9375rem;
@@ -109,6 +110,7 @@ article {
     display: flex;
     flex-direction: column;
     border-radius: .5rem;
+    overflow: hidden;
 }
 
 .item {
