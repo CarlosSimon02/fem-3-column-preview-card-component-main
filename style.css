@@ -110,7 +110,6 @@ article {
     margin-inline: auto;
     display: flex;
     flex-direction: column;
-    border-radius: .5rem;
     overflow: hidden;
 }
 
@@ -150,6 +149,7 @@ article {
         max-width: 57.5rem;
         height: 31.25rem;
         flex-direction: row;
+        border-radius: .5rem;
     }
 
     .item {
