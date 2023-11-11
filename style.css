@@ -1,0 +1,156 @@
+:root {
+    --clr-primary: white;
+    --clr-th-sedan: hsl(31, 77%, 52%);
+    --clr-th-suv: hsl(184, 100%, 22%);
+    --clr-th-luxury: hsl(179, 100%, 13%);
+    
+    --ff-accent: 'Big Shoulders Display', sans-serif;
+    --ff-primary: 'Lexend Deca', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* typography */
+body {
+    font-family: var(--ff-primary);
+    color: var(--clr-primary);
+    font-size: .9375rem;
+    font-weight: var(--fw-regular);
+    line-height: 1.5625rem;
+}
+
+h1,
+p {
+    color: var(--clr-primary);
+}
+
+h1 {
+    margin-top: 0.625rem;
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-bold);
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+p {
+    max-width: 40ch;
+}
+
+/* buttons */
+button {
+    cursor: pointer;
+    border-style: none;
+    border-radius: 9999rem;
+    padding-block: .75rem;
+    padding-inline: 2rem;
+    background-color: var(--clr-primary);
+    color: inherit;
+    border: 1px solid var(--clr-primary);
+}
+
+button:hover {
+    background-color: transparent;
+    color: var(--clr-primary);
+}
+
+/* layouts */
+main {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    align-items: center;
+}
+
+article {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+}
+
+.item {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5625rem;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5625rem
+}
+
+.sedans {
+    background-color: var(--clr-th-sedan);
+    color: var(--clr-th-sedan);
+}
+
+.suvs {
+    background-color: var(--clr-th-suv);
+    color: var(--clr-th-suv);
+}
+
+.luxury {
+    background-color: var(--clr-th-luxury);
+    color: var(--clr-th-luxury);
+}
+
+@media (min-width: 58.75em) {
+    article {
+        max-width: 57.5rem;
+        height: 31.25rem;
+        flex-direction: row;
+    }
+
+    .item {
+        flex: 1;
+    }
+}
+
