@@ -25,4 +25,4 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/CarlosSimon02/fem-3-column-preview-card-component-main](https://github.com/CarlosSimon02/fem-3-column-preview-card-component-main)
-- Live Site URL: [fem-3-column-preview-card-component-main-carlossimon.vercel.app](fem-3-column-preview-card-component-main-carlossimon.vercel.app)
+- Live Site URL: [https://fem-3-column-preview-card-component-main-carlossimon.vercel.app/](https://fem-3-column-preview-card-component-main-carlossimon.vercel.app/)
